@@ -1,2 +1,2 @@
-worker: python new.py
+worker: python app.py
 
