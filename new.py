@@ -2,9 +2,7 @@ import discord
 from bs4 import BeautifulSoup
 import urllib
 import urllib.request
-import requests
 import csv
-import os
 t1='ODA2MjE1'
 t2='NDY3MTgxNTM5MzQ4'
 t3='.YBmMqg.eXhvcDJYP'
