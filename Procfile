@@ -1,2 +1,2 @@
-web: gunicorn new.py
-release: python new.py
+worker: python new.py
+web: python new.py
