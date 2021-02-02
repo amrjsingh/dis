@@ -147,4 +147,4 @@ async def on_message(message):
     
     await message.channel.send(file=discord.File(filesend))
 
-client.run(TOKEN)
+#client.run(TOKEN)
