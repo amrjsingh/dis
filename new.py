@@ -5,7 +5,7 @@ import urllib.request
 import requests
 import csv
 import os
-TOKEN = str(os.environ.get('HOME'))
+TOKEN = str(os.environ.get('HOME')
 client = discord.Client()
 
 @client.event
