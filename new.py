@@ -6,6 +6,7 @@ import requests
 import csv
 import os
 TOKEN = os.environ.get('HOME')
+print(TOKEN)
 client = discord.Client()
 
 @client.event
