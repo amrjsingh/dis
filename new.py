@@ -5,6 +5,7 @@ import urllib.request
 import requests
 import csv
 import os
+TOKEN = str(os.environ.get('HOME'))
 client = discord.Client()
 
 @client.event
@@ -133,7 +134,7 @@ async def on_message(message):
 
             print("#" + str(service_count) + " ", dict_service)
             service_count += 1
-        await message.channel.send(page_number)
+        await message.channel.send(page_number*10)
         page_number += 1
 
     out_file.close()
@@ -142,7 +143,7 @@ async def on_message(message):
     msg=message.content
     print(message.content)
     #if message.content.startswith('!'):
-    await message.channel.send(page_number)
+    
     await message.channel.send(file=discord.File(filesend))
 
-client.run(os.environ['HOME'])
+client.run(TOKEN)
