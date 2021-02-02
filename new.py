@@ -5,7 +5,7 @@ import urllib.request
 import requests
 import csv
 import os
-TOKEN = os.environ.get('HOME')
+TOKEN = str(os.environ.get('HOME'))
 print(TOKEN)
 client = discord.Client()
 
@@ -147,4 +147,4 @@ async def on_message(message):
     
     await message.channel.send(file=discord.File(filesend))
 
-#client.run(TOKEN)
+client.run(TOKEN)
