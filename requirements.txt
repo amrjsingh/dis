@@ -1,4 +1,4 @@
 discord
 bs4
 requests
-gunicorn
+python-dotenv~=0.14.0
